@@ -14,5 +14,5 @@ const MyAccountPage = () => {
     </>
   );
 };
-
+ 
 export default MyAccountPage;

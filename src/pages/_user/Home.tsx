@@ -11,6 +11,6 @@ const HomePage = () => {
       <BalanceComp />
     </>
   );
-};
+}; 
 
 export default HomePage;

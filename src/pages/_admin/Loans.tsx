@@ -12,7 +12,7 @@ const LoansPage = () => {
       <SelectComp />
       <PaginationComp />
     </>
-  );
+  ); 
 };
 
 export default LoansPage;

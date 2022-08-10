@@ -11,6 +11,6 @@ const FundPage = () => {
       <ChartComp />
     </>
   );
-};
+}; 
 
 export default FundPage;

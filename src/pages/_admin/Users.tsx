@@ -11,6 +11,6 @@ const UsersPage = () => {
       <SearchComp />
     </>
   );
-};
+}; 
 
 export default UsersPage;

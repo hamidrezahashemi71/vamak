@@ -10,5 +10,5 @@ const LoanPage = () => {
     </>
   );
 };
-
+ 
 export default LoanPage;
