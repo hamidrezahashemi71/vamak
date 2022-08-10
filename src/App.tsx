@@ -2,6 +2,8 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import NotFoundPage from "./pages/general/NotFound";
+import ForgotPassPage from "./pages/general/ForgotPass";
+import ConfirmCodePage from "./pages/general/ConfirmCode";
 
 import AdminLayout from "./layouts/AdminLayout";
 import FundPage from "./pages/_admin/Fund";
@@ -22,16 +24,18 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<UserLayout />}>
-          <Route path='userlogin' element={<LoginUserPage />} />
+        <Route path='/' element={<LoginUserPage />} />
+        <Route path='/forgotpassword' element={<ForgotPassPage />} />
+        <Route path='/confirmcode' element={<ConfirmCodePage />} />
+        <Route path='/user/' element={<UserLayout />}>
           <Route path='home' element={<HomePage />} />
           <Route path='loan' element={<LoanPage />} />
           <Route path='myaccount' element={<MyAccountPage />} />
           <Route path='profile' element={<ProfilePage />} />
           <Route path='userreports' element={<ReportsPage />} />
         </Route>
+        <Route path='/adminlogin' element={<LoginAdminPage />} />
         <Route path='/admin/' element={<AdminLayout />}>
-          <Route path='adminlogin' element={<LoginAdminPage />} />
           <Route path='fund' element={<FundPage />} />
           <Route path='loans' element={<LoansPage />} />
           <Route path='users' element={<UsersPage />} />

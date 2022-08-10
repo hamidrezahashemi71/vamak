@@ -5,11 +5,11 @@ import SidebarUserComp from "../components/_general/SidebarUser";
 
 const UserLayout = () => {
   return (
-    <>
-      <Outlet />
+    <div className='m mt-[152px] mb-8 ml-40 mr-[400px]'>
       <HeaderComp />
       <SidebarUserComp />
-    </>
+      <Outlet />
+    </div>
   );
 };
 

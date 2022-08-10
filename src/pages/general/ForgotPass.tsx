@@ -5,4 +5,4 @@ const ForgotPassPage = () => {
   return <ForgotPassComp />;
 };
 
-export default ForgotPassPage;
+export default ForgotPassPage; 

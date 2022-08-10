@@ -5,11 +5,11 @@ import DepositWithdrawComp from "../../components/_admin/fund/DepositWithdraw";
 
 const FundPage = () => {
   return (
-    <>
+    <div className='bg-white w-full h-full'>
       <AdminBalanceComp />
       <DepositWithdrawComp />
       <ChartComp />
-    </>
+    </div>
   );
 }; 
 
