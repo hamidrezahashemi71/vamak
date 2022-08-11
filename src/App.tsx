@@ -29,9 +29,9 @@ function App() {
         <Route path='/confirmcode' element={<ConfirmCodePage />} />
         <Route path='/user/' element={<UserLayout />}>
           <Route path='home' element={<HomePage />} />
-          <Route path='loan' element={<LoanPage />} />
-          <Route path='myaccount' element={<MyAccountPage />} />
           <Route path='profile' element={<ProfilePage />} />
+          <Route path='myaccount' element={<MyAccountPage />} />
+          <Route path='loan' element={<LoanPage />} />
           <Route path='userreports' element={<ReportsPage />} />
         </Route>
         <Route path='/adminlogin' element={<LoginAdminPage />} />

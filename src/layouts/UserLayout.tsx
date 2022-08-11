@@ -5,7 +5,7 @@ import SidebarUserComp from "../components/_general/SidebarUser";
 
 const UserLayout = () => {
   return (
-    <div className='m mt-[152px] mb-8 ml-40 mr-[400px]'>
+    <div className='m mt-[152px] mb-8 ml-28 mr-[250px]'>
       <HeaderComp />
       <SidebarUserComp />
       <Outlet />

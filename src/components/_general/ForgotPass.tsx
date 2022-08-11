@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 
 const ForgotPassComp = () => {
   const [phone, setPhone] = useState("");
+
   return (
     <>
       <div className=' flex justify-center items-center bg-lightGray'>
@@ -26,14 +27,16 @@ const ForgotPassComp = () => {
                 />
               </div>
 
-              <Link to={"#"} className='underline text-lightBlue'>
+              <Link to={"/"} className='underline text-lightBlue'>
                 بازگشت به صفحه ورود
               </Link>
-              <button
-                disabled={!phone}
-                className='disabled:opacity-50 disabled:cursor-not-allowed w-full h-14 mt-10 bg-lightBlue transition-all hover:bg-blue rounded-md text-white'>
-                تایید
-              </button>
+              <Link to={"/confirmcode"}>
+                <button
+                  disabled={!phone}
+                  className='disabled:opacity-50 disabled:cursor-not-allowed w-full h-14 mt-10 bg-lightBlue transition-all hover:bg-blue rounded-md text-white'>
+                  تایید
+                </button>
+              </Link>
             </div>
           </div>
         </section>

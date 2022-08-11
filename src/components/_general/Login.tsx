@@ -41,7 +41,7 @@ const LoginComp = () => {
                   type='password'
                 />
               </div>
-              <Link to={"#"} className='underline text-lightBlue'>
+              <Link to={"/forgotpassword"} className='underline text-lightBlue'>
                 فراموشی رمز عبور
               </Link>
               <button
