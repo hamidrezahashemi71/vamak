@@ -540,7 +540,7 @@ const ProfileComp = () => {
                     </p>
                   )}
                 </div>
-                <div className='relative relative flex flex-col w-full'>
+                <div className='relative flex flex-col w-full'>
                   <label htmlFor='telephoneNum'>تلفن ثابت:</label>
                   <input
                     value={profileData.telephoneNum}

@@ -11,6 +11,7 @@ import LoansPage from "./pages/_admin/Loans";
 import LoginAdminPage from "./pages/_admin/LoginAdmin";
 import ReportsAdminPage from "./pages/_admin/ReportsAdmin";
 import UsersPage from "./pages/_admin/Users";
+import SingleLoan from "./pages/_user/SingleLoan";
 
 import UserLayout from "./layouts/UserLayout";
 import HomePage from "./pages/_user/Home";
@@ -32,6 +33,7 @@ function App() {
           <Route path='profile' element={<ProfilePage />} />
           <Route path='myaccount' element={<MyAccountPage />} />
           <Route path='loan' element={<LoanPage />} />
+          <Route path='loan/:id' element={<SingleLoan />} />
           <Route path='userreports' element={<ReportsPage />} />
         </Route>
         <Route path='/adminlogin' element={<LoginAdminPage />} />
