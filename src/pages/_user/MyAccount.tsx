@@ -16,22 +16,7 @@ const MyAccountPage = () => {
       <div className='flex gap-0 justify-center'>
         <DepositComp myBalance={myBalance} setMyBalance={setMyBalance} />
         <div className='flex items-center'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width='3'
-            height='320'
-            viewBox='0 0 3 320'>
-            <line
-              id='Line_12'
-              data-name='Line 12'
-              y2='320'
-              transform='translate(1.5)'
-              fill='none'
-              stroke='#707070'
-              stroke-width='3'
-              opacity='0.4'
-            />
-          </svg>
+          <img src={"/assets/images/line.png"} alt='line' />
         </div>
         <CheckoutComp />
       </div>

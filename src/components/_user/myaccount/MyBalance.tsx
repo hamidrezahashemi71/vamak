@@ -12,61 +12,24 @@ const MyBalanceComp: React.FC<Props> = ({myBalance}) => {
       <div className='flex flex-col'>
         <div className='flex gap-1 items-center'>
           <div>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='12'
-              height='12'
-              viewBox='0 0 12 12'>
-              <circle
-                id='Ellipse_117'
-                data-name='Ellipse 117'
-                cx='6'
-                cy='6'
-                r='6'
-                fill='#fc8b18'
-              />
-            </svg>
+            <img src={"/assets/images/orange-dot.png"} alt='orange-dot' />
           </div>
           <p className='text-xl'>موجودی</p>
         </div>
         <div className='flex justify-between gap-24'>
           <div className='flex flex-col gap-6 mt-16'>
             <div className='flex items-center gap-1'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='12'
-                height='12'
-                viewBox='0 0 12 12'>
-                <circle
-                  id='Ellipse_84'
-                  data-name='Ellipse 84'
-                  cx='6'
-                  cy='6'
-                  r='6'
-                  fill='#313757'
-                />
-              </svg>
+              <img src={"/assets/images/blue-dot.png"} alt='blue-dot' />
               <div className='flex gap-28 text-sm'>
                 <p>حق عضویت:</p>
                 <p>0 ریال</p>
               </div>
             </div>
             <div className='flex items-center gap-1'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='12'
-                height='12'
-                viewBox='0 0 12 12'>
-                <circle
-                  id='Ellipse_85'
-                  data-name='Ellipse 85'
-                  cx='6'
-                  cy='6'
-                  r='6'
-                  fill='#ffaa54'
-                />
-              </svg>
-
+              <img
+                src={"/assets/images/lightorange-dot.png"}
+                alt='lightorange-dot'
+              />
               <div className='flex gap-28 text-sm'>
                 <p>پس انداز:</p>
                 <p>0 ریال</p>

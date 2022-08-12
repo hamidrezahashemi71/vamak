@@ -19,20 +19,7 @@ const SingleLoan = () => {
         <div className='flex flex-col justyfy-center w-full'>
           <div className='flex justify-between w-full items-center'>
             <div className='flex items-center gap-1'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='12'
-                height='12'
-                viewBox='0 0 12 12'>
-                <circle
-                  id='Ellipse_117'
-                  data-name='Ellipse 117'
-                  cx='6'
-                  cy='6'
-                  r='6'
-                  fill='#fc8b18'
-                />
-              </svg>
+              <img src={"/assets/images/orange-dot.png"} alt='orange-dot' />
               <p className='text-xl'>اقساط وام جهیزیه</p>
             </div>
             <button className='border-[1px] border-lightBlue rounded-md px-8 py-4 text-lightBlue transition-all hover:bg-blue hover:text-white'>
