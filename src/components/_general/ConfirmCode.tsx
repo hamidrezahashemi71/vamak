@@ -42,11 +42,13 @@ const ConfirmCodeComp = () => {
                   </Link>
                 </div>
               </div>
-              <button
-                disabled={!confirmCode}
-                className='disabled:opacity-50 disabled:cursor-not-allowed w-full h-14 mt-10 bg-lightBlue transition-all hover:bg-blue rounded-md text-white'>
-                تایید
-              </button>
+              <Link to={"/user"}>
+                <button
+                  disabled={!confirmCode}
+                  className='disabled:opacity-50 disabled:cursor-not-allowed w-full h-14 mt-10 bg-lightBlue transition-all hover:bg-blue rounded-md text-white'>
+                  تایید
+                </button>
+              </Link>
             </div>
           </div>
         </section>

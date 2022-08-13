@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {
   Home,
   User,
@@ -19,60 +19,100 @@ const SidebarUserComp = () => {
         <p className='text-white text-2xl'>وامک</p>
       </div>
       <div className='flex flex-col mt-20 mb-8'>
-        <div className='flex items-center gap-4 cursor-pointer transition-all text-lightOrange hover:text-orange'>
+        <div className='flex items-center gap-4 cursor-pointer transition-all hover:text-orange'>
           <div>
-            <Home className='cursor-pointer w-8 h-8' />
+            <Home className='cursor-pointer w-8 h-8 text-white' />
           </div>
-          <Link to={"/user/home"}>
-            <p className='cursor-pointer text-lg font-bold'>خانه</p>
-          </Link>
+          <NavLink
+            to={"/user/home"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>خانه</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <User className='cursor-pointer w-8 h-8' />
+            <User className='cursor-pointer w-8 h-8 text-white' />
           </div>
-          <Link to={"/user/profile"}>
-            <p className='cursor-pointer text-lg font-bold'>پروفایل</p>
-          </Link>
+          <NavLink
+            to={"/user/profile"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>پروفایل</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <ChartCircle className='cursor-pointer w-8 h-8' />
+            <ChartCircle className='cursor-pointer w-8 h-8 text-white' />
           </div>
-          <Link to={"/user/myaccount"}>
-            <p className='cursor-pointer text-lg font-bold'>حساب من</p>
-          </Link>
+          <NavLink
+            to={"/user/myaccount"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>حساب من</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <DollarSquare className='cursor-pointer w-8 h-8' />
+            <DollarSquare className='cursor-pointer w-8 h-8 text-white' />
           </div>
-          <Link to={"/user/loan"}>
-            <p className='cursor-pointer text-lg font-bold'>وام</p>
-          </Link>
+          <NavLink
+            to={"/user/loan"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>وام</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <Receipt1 className='cursor-pointer w-8 h-8' />
+            <Receipt1 className='cursor-pointer w-8 h-8 text-white' />
           </div>
-          <Link to={"/user/userreports"}>
-            <p className='cursor-pointer text-lg font-bold'>گزارشات</p>
-          </Link>
+          <NavLink
+            to={"/user/userreports"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>گزارشات</p>
+          </NavLink>
         </div>
       </div>
       <div className='absolute bottom-11 flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
         <div>
-          <Logout className='cursor-pointer w-8 h-8' />
+          <Logout className='cursor-pointer w-8 h-8 text-white' />
         </div>
-        <p className='cursor-pointer text-lg font-bold'>خروج از حساب</p>
+        <p className='cursor-pointer font-bold'>خروج از حساب</p>
       </div>
     </div>
   );

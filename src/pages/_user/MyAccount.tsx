@@ -3,9 +3,11 @@ import CheckoutComp from "../../components/_user/myaccount/Checkout";
 import DepositComp from "../../components/_user/myaccount/Deposit";
 import LastTransComp from "../../components/_user/myaccount/LastTrans";
 import MyBalanceComp from "../../components/_user/myaccount/MyBalance";
+import useDocTitle from "../../lib/customHooks";
 
 const MyAccountPage = () => {
-  const [myBalance, setMyBalance] = useState(0);
+  useDocTitle("وامک | حساب من");
+  const [myBalance, setMyBalance] = useState(30000000);
 
   return (
     <div className='flex flex-col gap-6'>

@@ -139,7 +139,7 @@ const ProfileComp = () => {
               </div>
               <div className='flex w-full px-8 justify-between gap-16 mb-10'>
                 <div className='relative flex flex-col w-full '>
-                  <label htmlFor='mobileNum'>تففن همراه:</label>
+                  <label htmlFor='mobileNum'>تلفن همراه:</label>
                   <input
                     value={profileData.mobileNum}
                     onChange={(e) =>

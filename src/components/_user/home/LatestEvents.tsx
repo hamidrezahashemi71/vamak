@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import LatestEventsTable from "../../_tables/LatestEvents";
 
 const LatestEventsComp = () => {
   const [latestEvents, setLatestEvents] = useState([1]);
@@ -16,40 +17,7 @@ const LatestEventsComp = () => {
             رویدادی رخ نداده است
           </p>
         ) : (
-          <table className='mt-4'>
-            <tbody>
-              <tr className='odd:bg-lightGray even:bg-white'>
-                <td>شروع وام:</td>
-                <td>15:31</td>
-                <td>1400/13/05</td>
-              </tr>
-              <tr className='odd:bg-lightGray even:bg-white'>
-                <td>درخواست وام:</td>
-                <td>15:31</td>
-                <td>1400/13/05</td>
-              </tr>
-              <tr className='odd:bg-lightGray even:bg-white'>
-                <td>واریز به صندوق:</td>
-                <td>15:31</td>
-                <td>1400/13/05</td>
-              </tr>
-              <tr className='odd:bg-lightGray even:bg-white'>
-                <td>پرداخت قسط:</td>
-                <td>15:31</td>
-                <td>1400/13/05</td>
-              </tr>
-              <tr className='odd:bg-lightGray even:bg-white'>
-                <td>پرداخت قسط:</td>
-                <td>15:31</td>
-                <td>1400/13/05</td>
-              </tr>
-              <tr className='odd:bg-lightGray even:bg-white'>
-                <td>پرداخت قسط:</td>
-                <td>15:31</td>
-                <td>1400/13/05</td>
-              </tr>
-            </tbody>
-          </table>
+          <LatestEventsTable />
         )}
       </div>
     </div>

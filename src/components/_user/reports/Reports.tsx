@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import {Calendar} from "iconsax-react";
+import UserReportsTable from "../../_tables/UserReports";
 
 const ReportsComp = () => {
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+  const [reportList, setReportList] = useState([1]);
+
   return (
     <>
       <div className='w-full bg-white h-full rounded-md p-6'>
@@ -13,9 +18,9 @@ const ReportsComp = () => {
           <div className='flex gap-6 items-center mt-12'>
             <div className='relative'>
               <input
-                id='depositAmount'
-                // value={depositAmount}
-                // onChange={(e) => setDepositAmount(e.target.value)}
+                id='startDate'
+                value={startDate}
+                onChange={(e) => setStartDate(e.target.value)}
                 className='relative w-full border-[1px] border-gray rounded-md h-14 outline-none mt-1 px-14 pl-11'
                 type='Date'
                 min={1000000}
@@ -27,9 +32,9 @@ const ReportsComp = () => {
             </div>
             <div className='relative'>
               <input
-                id='depositAmount'
-                // value={depositAmount}
-                // onChange={(e) => setDepositAmount(e.target.value)}
+                id='endDate'
+                value={endDate}
+                onChange={(e) => setEndDate(e.target.value)}
                 className='relative w-full border-[1px] border-gray rounded-md h-14 outline-none mt-1 px-14 pl-11'
                 type='Date'
                 min={1000000}
@@ -53,6 +58,13 @@ const ReportsComp = () => {
               alt='pdf-file'
             />
           </div>
+          {!reportList.length ? (
+            <p className='flex items-center justify-center text-black opacity-40 text-xl mt-20'>
+              گزارشی وجود ندارد.
+            </p>
+          ) : (
+            <UserReportsTable />
+          )}
         </div>
       </div>
     </>

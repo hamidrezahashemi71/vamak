@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import {
   LockCircle,
   User,
@@ -18,11 +19,21 @@ const SidebarAdminComp = () => {
         <p className='text-white text-2xl'>وامک</p>
       </div>
       <div className='flex flex-col mt-20 mb-8'>
-        <div className='flex items-center gap-4 cursor-pointer transition-all text-lightOrange hover:text-orange'>
+        <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
             <LockCircle className='cursor-pointer w-8 h-8' />
           </div>
-          <p className='cursor-pointer text-lg font-bold'>صندوق</p>
+          <NavLink
+            to={"/admin/fund"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>صندوق</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
@@ -30,7 +41,17 @@ const SidebarAdminComp = () => {
           <div>
             <User className='cursor-pointer w-8 h-8' />
           </div>
-          <p className='cursor-pointer text-lg font-bold'>کاربران</p>
+          <NavLink
+            to={"/admin/users"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>کاربران</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
@@ -38,7 +59,17 @@ const SidebarAdminComp = () => {
           <div>
             <DollarSquare className='cursor-pointer w-8 h-8' />
           </div>
-          <p className='cursor-pointer text-lg font-bold'>وام ها</p>
+          <NavLink
+            to={"/admin/loans"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>وام ها</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
@@ -46,7 +77,17 @@ const SidebarAdminComp = () => {
           <div>
             <Receipt1 className='cursor-pointer w-8 h-8' />
           </div>
-          <p className='cursor-pointer text-lg font-bold'>گزارشات</p>
+          <NavLink
+            to={"/admin/adminreports"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>گزارشات</p>
+          </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
@@ -54,14 +95,24 @@ const SidebarAdminComp = () => {
           <div>
             <Sms className='cursor-pointer w-8 h-8' />
           </div>
-          <p className='cursor-pointer text-lg font-bold'>ارتباطات</p>
+          <NavLink
+            to={"/admin/communications"}
+            style={({isActive}) =>
+              isActive
+                ? {
+                    color: "#FC8B18",
+                  }
+                : {color: "#FFFFFF"}
+            }>
+            <p className='cursor-pointer font-bold'>ارتباطات</p>
+          </NavLink>
         </div>
       </div>
       <div className='absolute bottom-11 flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
         <div>
           <Logout className='cursor-pointer w-8 h-8' />
         </div>
-        <p className='cursor-pointer text-lg font-bold'>خروج از حساب</p>
+        <p className='cursor-pointer font-bold'>خروج از حساب</p>
       </div>
     </div>
   );

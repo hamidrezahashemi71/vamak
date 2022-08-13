@@ -1,0 +1,62 @@
+===================== GENERAL COMPONENTS =====================
+
+GENERAL
+TODO: page titles
+TODO: making pages responsive
+TODO: farsi numbers
+TODO: logout functionality
+
+TABLES
+TODO: tables paddings and sizing
+TODO: refactor table row background colors
+
+STATE MANAGEMENT
+TODO: defining a valid user
+
+LOGIN
+TODO: login validation
+TODO: login validation
+TODO: forgotpass number validation
+TODO: confirm code 4 digit input implementation
+TODO: confirm code countdown implementation and validation
+
+HEADER
+TODO: header dynamic username
+TODO: header calendar
+
+
+
+
+
+===================== USER PAGES =====================
+
+HOME
+TODO: dynamic balance
+
+PROFILE
+TODO: form validation and save to localstorage
+
+MYACCOUNT
+TODO: dynamic my balance
+TODO: deposit button functionality
+TODO: checkout functionality
+
+LOAN
+TODO: request form validation
+TODO: dynamic status
+
+SINGLELOAN
+TODO: handle paid status
+
+REPORTS
+TODO: handle date pickers
+TODO: paid checks dynamic
+TODO: filter functionality
+
+MESSAGES
+
+
+
+
+
+===================== ADMIN PAGES =====================

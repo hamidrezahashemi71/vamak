@@ -44,11 +44,13 @@ const LoginComp = () => {
               <Link to={"/forgotpassword"} className='underline text-lightBlue'>
                 فراموشی رمز عبور
               </Link>
-              <button
-                disabled={!loginData.username || !loginData.password}
-                className='disabled:opacity-50 disabled:cursor-not-allowed w-full h-14 mt-10 bg-lightBlue transition-all hover:bg-blue rounded-md text-white'>
-                ورود به حساب کاربری
-              </button>
+              <Link to={"/user"}>
+                <button
+                  disabled={!loginData.username || !loginData.password}
+                  className='disabled:opacity-50 disabled:cursor-not-allowed w-full h-14 mt-10 bg-lightBlue transition-all hover:bg-blue rounded-md text-white'>
+                  ورود به حساب کاربری
+                </button>
+              </Link>
             </div>
           </div>
         </section>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
+import FuturePaymentsTable from "../../_tables/FuturePayments";
 
 const FuturePaymentComp = () => {
+  const [futurePayments, setFuturePayments] = useState([1]);
+
   return (
     <>
       <div className='flex flex-col gap-1'>
@@ -11,19 +14,15 @@ const FuturePaymentComp = () => {
             </div>
             <p className='text-xl'>قسط های پیش رو</p>
           </div>
-          <div className='flex justify-center gap-20 mt-8'>
-            <p className='text-black'>عنوان وام</p>
-            <p className='text-black'>تاریخ و زمان پرداخت</p>
-            <p className='text-black'>اقساط باقیمانده</p>
-            <p className='text-black'>مبلغ قسط</p>
-            <p className='text-black'>دیرکرد اقساط</p>
-            <p className='text-black'>پرداخت</p>
-          </div>
         </div>
         <div className='w-full h-[350px] bg-white rounded-md'>
-          <p className='text-black opacity-40 text-xl text-center mt-20'>
-            شما وام فعالی ندارید
-          </p>
+          {!futurePayments.length ? (
+            <p className='text-black opacity-40 text-xl text-center mt-20'>
+              شما وام فعالی ندارید
+            </p>
+          ) : (
+            <FuturePaymentsTable />
+          )}
         </div>
       </div>
     </>
