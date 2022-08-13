@@ -31,6 +31,7 @@ function App() {
         <Route path='/forgotpassword' element={<ForgotPassPage />} />
         <Route path='/confirmcode' element={<ConfirmCodePage />} />
         <Route path='/user/' element={<UserLayout />}>
+          <Route path='' element={<HomePage />} />
           <Route path='home' element={<HomePage />} />
           <Route path='profile' element={<ProfilePage />} />
           <Route path='myaccount' element={<MyAccountPage />} />
@@ -41,6 +42,7 @@ function App() {
         </Route>
         <Route path='/adminlogin' element={<LoginAdminPage />} />
         <Route path='/admin/' element={<AdminLayout />}>
+          <Route path='' element={<FundPage />} />
           <Route path='fund' element={<FundPage />} />
           <Route path='users' element={<UsersPage />} />
           <Route path='loans' element={<LoansPage />} />

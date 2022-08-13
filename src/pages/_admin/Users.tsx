@@ -1,18 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import ButtonsComp from "../../components/_admin/users/Buttons";
-import UserListComp from "../../components/_admin/users/UserList";
-import SearchComp from "../../components/_general/Search";
+import UsersContentComp from "../../components/_admin/users/UsersContent";
+
 import useDocTitle from "../../lib/customHooks";
 
 const UsersPage = () => {
+  const [pagination, setpagination] = useState("0");
   useDocTitle("وامک | کاربران");
   return (
     <>
-      <ButtonsComp />
-      <UserListComp />
-      <SearchComp />
+      <ButtonsComp pagination={pagination} setpagination={setpagination} />
+      <UsersContentComp pagination={pagination} />
     </>
   );
-}; 
+};
 
 export default UsersPage;

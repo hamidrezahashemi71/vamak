@@ -7,7 +7,7 @@ import useDocTitle from "../../lib/customHooks";
 
 const MyAccountPage = () => {
   useDocTitle("وامک | حساب من");
-  const [myBalance, setMyBalance] = useState(30000000);
+  const [myBalance, setMyBalance] = useState(3000000);
 
   return (
     <div className='flex flex-col gap-6'>

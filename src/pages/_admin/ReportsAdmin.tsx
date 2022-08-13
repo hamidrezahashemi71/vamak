@@ -3,7 +3,6 @@ import CommentsComp from "../../components/_admin/reports/Comments";
 import CommunicationsComp from "../../components/_admin/reports/Communications";
 import FormComp from "../../components/_admin/reports/Form";
 import UserComunicateComp from "../../components/_admin/reports/UserComunicate";
-import SearchComp from "../../components/_general/Search";
 import useDocTitle from "../../lib/customHooks";
 
 const ReportsAdminPage = () => {
@@ -14,7 +13,6 @@ const ReportsAdminPage = () => {
       <UserComunicateComp />
       <FormComp />
       <CommentsComp />
-      <SearchComp />
     </>
   );
 };

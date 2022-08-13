@@ -1,7 +1,7 @@
 import React from "react";
-import UserListTable from "../../_tables/UserList";
+import CheckoutTable from "../../_tables/Checkout";
 
-const UserList = () => {
+const CheckoutReq = () => {
   return (
     <div className='flex flex-col w-full h-full bg-white rounded-md'>
       <div className='relative'>
@@ -16,9 +16,9 @@ const UserList = () => {
           alt='search-normal'
         />
       </div>
-      <UserListTable />
+      <CheckoutTable />
     </div>
   );
 };
 
-export default UserList;
+export default CheckoutReq;

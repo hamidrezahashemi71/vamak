@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import {
   LockCircle,
   User,
@@ -12,12 +12,14 @@ import {
 const SidebarAdminComp = () => {
   return (
     <div className='absolute right-0 top-0 h-screen w-[15.5vw] bg-blue pt-4 pr-6 pl-14'>
-      <div className='flex gap-4 justify-center items-center'>
-        <div className='w-[80px] h-[89px] '>
-          <img src={"/assets/images/logo.png"} alt='logo' />
+      <Link to={"/"}>
+        <div className='flex gap-4 justify-center items-center'>
+          <div className='w-[80px] h-[89px] '>
+            <img src={"/assets/images/logo.png"} alt='logo' />
+          </div>
+          <p className='text-white text-2xl'>وامک</p>
         </div>
-        <p className='text-white text-2xl'>وامک</p>
-      </div>
+      </Link>
       <div className='flex flex-col mt-20 mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
