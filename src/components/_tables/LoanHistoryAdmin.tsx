@@ -21,7 +21,7 @@ const LoanHistoryAdmin = () => {
           <td>جهیزیه</td>
           <td>5/000/000 ریال</td>
           <td>1400/11/03</td>
-          <Link to={"/user/loan/:id"}>
+          <Link to={"/admin/loans/:id"}>
             <td className='text-lightBlue transition-all hover:text-blue'>
               در حال بررسی
             </td>
@@ -33,7 +33,7 @@ const LoanHistoryAdmin = () => {
           <td>جهیزیه</td>
           <td>5/000/000 ریال</td>
           <td>1400/11/03</td>
-          <Link to={"/user/loan/:id"}>
+          <Link to={"/admin/loans/:id"}>
             <td className='text-lightOrange transition-all hover:text-orange'>
               تایید شده
             </td>
@@ -45,7 +45,7 @@ const LoanHistoryAdmin = () => {
           <td>جهیزیه</td>
           <td>5/000/000 ریال</td>
           <td>1400/11/03</td>
-          <Link to={"/user/loan/:id"}>
+          <Link to={"/admin/loans/:id"}>
             <td className='text-lightGreen transition-all hover:text-green'>
               در حال پرداخت
             </td>
@@ -57,7 +57,7 @@ const LoanHistoryAdmin = () => {
           <td>جهیزیه</td>
           <td>5/000/000 ریال</td>
           <td>1400/11/03</td>
-          <Link to={"/user/loan/:id"}>
+          <Link to={"/admin/loans/:id"}>
             <td className='text-blue transition-all hover:text-lightBlue'>
               پرداخت شده
             </td>
@@ -69,7 +69,7 @@ const LoanHistoryAdmin = () => {
           <td>جهیزیه</td>
           <td>5/000/000 ریال</td>
           <td>1400/11/03</td>
-          <Link to={"/user/loan/:id"}>
+          <Link to={"/admin/loans/:id"}>
             <td className='text-red transition-all hover:text-darkRed'>لغو</td>
           </Link>
         </tr>

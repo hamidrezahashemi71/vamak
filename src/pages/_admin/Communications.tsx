@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import CommentsComp from "../../components/_admin/communications/Comments";
+import FormComp from "../../components/_admin/communications/Form";
+import UserComunicateComp from "../../components/_admin/communications/UserComunicate";
+import useDocTitle from "../../lib/customHooks";
 
-const Communications = () => {
+const ReportsAdminPage = () => {
+  useDocTitle("وامک ادمین | گزارشات");
   return (
-    <div>Communications</div>
-  )
-}
+    <>
+      <UserComunicateComp />
+      <FormComp />
+      <CommentsComp />
+    </>
+  );
+};
 
-export default Communications
+export default ReportsAdminPage;

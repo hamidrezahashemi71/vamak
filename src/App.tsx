@@ -9,10 +9,11 @@ import AdminLayout from "./layouts/AdminLayout";
 import FundPage from "./pages/_admin/Fund";
 import LoansPage from "./pages/_admin/Loans";
 import LoginAdminPage from "./pages/_admin/LoginAdmin";
-import ReportsAdminPage from "./pages/_admin/ReportsAdmin";
+import ReportsAdminPage from "./pages/_admin/Communications";
 import UsersPage from "./pages/_admin/Users";
 import SingleLoan from "./pages/_user/SingleLoan";
 import Messages from "./pages/_user/Messages";
+import SingleLoanReport from "./pages/_admin/SingleLoanReport";
 
 import UserLayout from "./layouts/UserLayout";
 import HomePage from "./pages/_user/Home";
@@ -46,6 +47,7 @@ function App() {
           <Route path='fund' element={<FundPage />} />
           <Route path='users' element={<UsersPage />} />
           <Route path='loans' element={<LoansPage />} />
+          <Route path='loans/:id' element={<SingleLoanReport />} />
           <Route path='adminreports' element={<ReportsAdminPage />} />
           <Route path='communications' element={<Communications />} />
         </Route>
