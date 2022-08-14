@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
+import CheckoutFullConfirmModal from "./CheckoutFullConfirmModal";
 
 interface Props {
   hideModal: () => void;
 }
 
 const CheckoutConfirm: React.FC<Props> = ({hideModal}) => {
+  const [checkoutFullConfirm, setCheckoutFullConfirm] = useState(false);
+  const showNextModal = () => {
+    setCheckoutFullConfirm(true);
+  };
+
   return (
     <>
       <div
@@ -20,13 +26,18 @@ const CheckoutConfirm: React.FC<Props> = ({hideModal}) => {
               لغو
             </button>
             <button
-              onClick={() => hideModal()}
+              onClick={() => showNextModal()}
               className='w-28 h-11 rounded-md text-blue border-[1px] border-blue transition-all hover:bg-blue hover:text-white'>
               تایید
             </button>
           </div>
         </div>
       </div>
+      {checkoutFullConfirm ? (
+        <CheckoutFullConfirmModal hideModal={hideModal} />
+      ) : (
+        ""
+      )}
     </>
   );
 };

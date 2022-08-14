@@ -2,7 +2,7 @@ import React from "react";
 
 const LastTransTable = () => {
   return (
-    <table className='w-full mt-6 border-collapse-[7px] '>
+    <table className='w-full mt-6 border-collapse-[7px] border-separate [border-spacing:0.75rem] '>
       <thead className='text-center text-sm font-normal'>
         <tr>
           <th>تاریخ</th>

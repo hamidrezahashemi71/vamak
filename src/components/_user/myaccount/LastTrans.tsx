@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import LastTransTable from "../../_tables/LastTrans";
 
 const LastTransComp = () => {
-  const [lastTransactions, setLastTransactions] = useState([]);
+  const [lastTransactions, setLastTransactions] = useState([1]);
   return (
-    <div className='w-[50%] h-[350px] bg-white rounded-md p-6'>
+    <div className='w-[50%] h-[350px] bg-white rounded-md p-6  overflow-y-auto'>
       <div className='flex flex-col'>
         <div className='flex gap-1 items-center'>
           <div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const LatestEventsTable = () => {
   return (
-    <table className='mt-4 flex'>
+    <table className='mt-4 flex border-separate [border-spacing:0.6rem]'>
       <tbody>
         <tr className='odd:bg-lightGray even:bg-white'>
           <td>شروع وام:</td>

@@ -8,7 +8,7 @@ const SingleLoan = () => {
 
   return (
     <>
-      <div className='w-full bg-white h-full rounded-md p-6'>
+      <div className='w-full bg-white h-full rounded-md p-6 overflow-y-auto'>
         <div className='flex flex-col justyfy-center w-full'>
           <div className='flex justify-between w-full items-center'>
             <div className='flex items-center gap-1'>

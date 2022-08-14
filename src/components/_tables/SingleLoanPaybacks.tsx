@@ -13,7 +13,7 @@ const SingleLoanPaybacksTable = () => {
   };
   return (
     <>
-      <table className='text-center mt-20'>
+      <table className='text-center mt-20 border-separate [border-spacing:0.6rem]'>
         <thead>
           <tr>
             <th>شماره</th>

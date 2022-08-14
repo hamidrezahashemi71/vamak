@@ -2,7 +2,7 @@ import React from "react";
 
 const UserReportsTable = () => {
   return (
-    <table className='text-center mt-11'>
+    <table className='text-center mt-11 border-separate [border-spacing:2rem]'>
       <thead>
         <tr>
           <th>عنوان گزارش</th>

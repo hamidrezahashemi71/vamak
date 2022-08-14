@@ -3,7 +3,7 @@ import CheckoutTable from "../../_tables/Checkout";
 
 const CheckoutReq = () => {
   return (
-    <div className='flex flex-col w-full h-full bg-white rounded-md'>
+    <div className='flex flex-col w-full h-full bg-white rounded-md overflow-y-auto'>
       <div className='relative'>
         <input
           type='text'

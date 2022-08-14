@@ -2,7 +2,7 @@ import React from "react";
 
 const UserListTable = () => {
   return (
-    <table className='text-center mt-8'>
+    <table className='text-center mt-8 border-separate [border-spacing:1rem]'>
       <thead>
         <tr>
           <th>نام و نام خانوادگی</th>

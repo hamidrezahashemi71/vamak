@@ -14,7 +14,7 @@ const BalanceComp = () => {
           <p className='text-4xl text-green'>0</p>
           <p className='text-black'>ریال</p>
         </div>
-        <div className='flex justify-between gap-12 mt-16'>
+        <div className='flex justify-between gap-8 mt-16'>
           <p className='text-sm'>
             مبلغ قابل پرداخت برای حق عضویت در سامانه:
             <span className='text-orange'> 1/000/000</span> ریال

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const LoanHistoryTable = () => {
   return (
-    <table className='mt-9 text-center'>
+    <table className='mt-9 text-center border-separate [border-spacing:1rem]'>
       <thead>
         <tr>
           <th>عنوان وام</th>

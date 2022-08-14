@@ -5,7 +5,7 @@ const LoanHistoryComp = () => {
   const [loanReqHistory, setloanReqHistory] = useState([1]);
 
   return (
-    <div className=' w-[60%] bg-white h-[800px] rounded-md p-6'>
+    <div className=' w-[60%] bg-white h-[800px] rounded-md p-6 overflow-y-auto'>
       <div className='flex flex-col justyfy-center w-full'>
         <div className='flex items-center gap-1'>
           <img src={"/assets/images/orange-dot.png"} alt='orange-dot' />

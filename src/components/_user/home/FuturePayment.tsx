@@ -6,7 +6,7 @@ const FuturePaymentComp = () => {
 
   return (
     <>
-      <div className='flex flex-col gap-1'>
+      <div className='flex flex-col gap-1 overflow-y-auto'>
         <div className='w-full h-32 bg-white rounded-md px-6 py-5'>
           <div className='flex gap-1 items-center'>
             <div>
