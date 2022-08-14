@@ -24,7 +24,7 @@ const DepositWithdrawComp = () => {
 
   return (
     <>
-      <div className='w-[50%] h-[350px] bg-white rounded-md p-6'>
+      <div className='w-[50%] h-[350px] bg-white rounded-md p-6 overflow-hidden'>
         <div className='w-full h-full'>
           <div className='flex flex-col'>
             <div className='flex items-center'>
@@ -35,7 +35,7 @@ const DepositWithdrawComp = () => {
               </button>
               <button className='w-[50%] underline'>دریافت</button>
             </div>
-            <div className='flex items-center w-[200%] bg-red'>
+            <div className='flex items-center w-[200%] '>
               <div className='flex flex-col w-[50%] ml-14'>
                 <div className='relative mt-9'>
                   <label htmlFor='adminDepositAmount'>مبلغ:</label>

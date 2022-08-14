@@ -9,11 +9,10 @@ import AdminLayout from "./layouts/AdminLayout";
 import FundPage from "./pages/_admin/Fund";
 import LoansPage from "./pages/_admin/Loans";
 import LoginAdminPage from "./pages/_admin/LoginAdmin";
-import ReportsAdminPage from "./pages/_admin/Communications";
+import ReportsAdminPage from "./pages/_admin/ReportsAdmin";
 import UsersPage from "./pages/_admin/Users";
-import SingleLoan from "./pages/_user/SingleLoan";
-import Messages from "./pages/_user/Messages";
 import SingleLoanReport from "./pages/_admin/SingleLoanReport";
+import Communications from "./pages/_admin/Communications";
 
 import UserLayout from "./layouts/UserLayout";
 import HomePage from "./pages/_user/Home";
@@ -22,7 +21,8 @@ import LoginUserPage from "./pages/_user/LoginUser";
 import MyAccountPage from "./pages/_user/MyAccount";
 import ProfilePage from "./pages/_user/Profile";
 import ReportsPage from "./pages/_user/Reports";
-import Communications from "./pages/_admin/Communications";
+import SingleLoan from "./pages/_user/SingleLoan";
+import Messages from "./pages/_user/Messages";
 
 function App() {
   return (

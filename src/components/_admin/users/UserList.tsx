@@ -3,7 +3,7 @@ import UserListTable from "../../_tables/UserList";
 
 const UserList = () => {
   return (
-    <div className='flex flex-col w-full h-full bg-white rounded-md  overflow-y-auto'>
+    <div className='flex flex-col w-full h-full bg-white rounded-md p-6 overflow-y-auto'>
       <div className='relative'>
         <input
           type='text'

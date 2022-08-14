@@ -6,7 +6,7 @@ import useDocTitle from "../../lib/customHooks";
 
 const UsersPage = () => {
   const [pagination, setpagination] = useState("0");
-  useDocTitle("وامک | کاربران");
+  useDocTitle("وامک ادمین | کاربران");
   return (
     <>
       <ButtonsComp pagination={pagination} setpagination={setpagination} />
