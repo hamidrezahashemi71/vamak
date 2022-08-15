@@ -3,6 +3,22 @@ import {Link} from "react-router-dom";
 
 const ConfirmCodeComp = () => {
   const [confirmCode, setConfirmCode] = useState("");
+
+  const handleEnter = (event: any) => {
+    if (event.key !== "Backspace") {
+      const form = event.target.form;
+      const index = [...form].indexOf(event.target);
+      form.elements[index - 1].focus();
+      event.preventDefault();
+    }
+    if (event.key === "Backspace") {
+      const form = event.target.form;
+      const index = [...form].indexOf(event.target);
+      form.elements[index + 1].focus();
+      event.preventDefault();
+    }
+  };
+
   return (
     <>
       <div className=' flex justify-center items-center bg-lightGray'>
@@ -14,15 +30,27 @@ const ConfirmCodeComp = () => {
               کنید
             </div>
             <div className='w-[90%] flex-col items-center mx-auto bg-white mt-3 px-5 py-7 rounded-md'>
-              <div className='flex flex-col'>
+              <form className='flex gap-3 w-full justify-center mb-6'>
                 <input
-                  id='phone'
-                  value={confirmCode}
-                  onChange={(e) => setConfirmCode(e.target.value)}
-                  className='border-[1px] border-gray rounded-md h-10 mb-6 outline-none mt-1'
-                  type='number'
+                  className='w-10 h-10 text-center rounded-md border-[1px] border-black'
+                  maxLength={1}
                 />
-              </div>
+                <input
+                  className='w-10 h-10 text-center rounded-md border-[1px] border-black'
+                  onKeyUp={handleEnter}
+                  maxLength={1}
+                />
+                <input
+                  className='w-10 h-10 text-center rounded-md border-[1px] border-black'
+                  onKeyUp={handleEnter}
+                  maxLength={1}
+                />
+                <input
+                  className='w-10 h-10 text-center rounded-md border-[1px] border-black'
+                  onKeyUp={handleEnter}
+                  maxLength={1}
+                />
+              </form>
               <div className='flex justify-center text-lightBlue text-center'>
                 تا ارسال مجدد کد : 00:56
               </div>

@@ -13,7 +13,7 @@ const FuturePaymentsTable = () => {
 
   return (
     <>
-      <table className='text-center w-full border-separate [border-spacing:2rem]'>
+      <table className='text-center w-full md:w-[50%] border-separate [border-spacing:2rem]'>
         <thead>
           <tr>
             <th>عنوان وام</th>

@@ -11,7 +11,7 @@ import {
 
 const SidebarAdminComp = () => {
   return (
-    <div className='absolute right-0 top-0 h-screen w-[15.5vw] bg-blue pt-4 pr-6 pl-14'>
+    <div className='absolute right-0 top-0 h-screen w-[15.5vw] lg:w-[25vw]  sm:text-sm bg-blue pt-4 pr-6 pl-14 sm:pr-2'>
       <Link to={"/"}>
         <div className='flex gap-4 justify-center items-center'>
           <div className='w-[80px] h-[89px] '>
@@ -23,7 +23,7 @@ const SidebarAdminComp = () => {
       <div className='flex flex-col mt-20 mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <LockCircle className='cursor-pointer w-8 h-8' />
+            <LockCircle className='cursor-pointer w-8 h-8 sm:hidden' />
           </div>
           <NavLink
             to={"/admin/fund"}
@@ -34,14 +34,14 @@ const SidebarAdminComp = () => {
                   }
                 : {color: "#FFFFFF"}
             }>
-            <p className='cursor-pointer font-bold'>صندوق</p>
+            <p className='cursor-pointer font-bold '>صندوق</p>
           </NavLink>
         </div>
       </div>
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <User className='cursor-pointer w-8 h-8' />
+            <User className='cursor-pointer w-8 h-8 sm:hidden' />
           </div>
           <NavLink
             to={"/admin/users"}
@@ -59,7 +59,7 @@ const SidebarAdminComp = () => {
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <DollarSquare className='cursor-pointer w-8 h-8' />
+            <DollarSquare className='cursor-pointer w-8 h-8 sm:hidden' />
           </div>
           <NavLink
             to={"/admin/loans"}
@@ -77,7 +77,7 @@ const SidebarAdminComp = () => {
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <Receipt1 className='cursor-pointer w-8 h-8' />
+            <Receipt1 className='cursor-pointer w-8 h-8 sm:hidden' />
           </div>
           <NavLink
             to={"/admin/adminreports"}
@@ -95,7 +95,7 @@ const SidebarAdminComp = () => {
       <div className='flex flex-col mb-8'>
         <div className='flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
           <div>
-            <Sms className='cursor-pointer w-8 h-8' />
+            <Sms className='cursor-pointer w-8 h-8 sm:hidden' />
           </div>
           <NavLink
             to={"/admin/communications"}
@@ -112,7 +112,7 @@ const SidebarAdminComp = () => {
       </div>
       <div className='absolute bottom-11 flex items-center gap-4 cursor-pointer transition-all text-white hover:text-gray'>
         <div>
-          <Logout className='cursor-pointer w-8 h-8' />
+          <Logout className='cursor-pointer w-8 h-8 sm:hidden' />
         </div>
         <p className='cursor-pointer font-bold'>خروج از حساب</p>
       </div>

@@ -8,7 +8,7 @@ const HomePage = () => {
   useDocTitle("وامک | خانه");
   return (
     <>
-      <div className='flex gap-6 mb-6'>
+      <div className='flex gap-6 mb-6 lg:flex-col lg:items-center'>
         <BalanceComp />
         <LatestEventsComp />
       </div>

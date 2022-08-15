@@ -6,8 +6,8 @@ const FuturePaymentComp = () => {
 
   return (
     <>
-      <div className='flex flex-col gap-1 overflow-y-auto'>
-        <div className='w-full h-32 bg-white rounded-md px-6 py-5'>
+      <div className='w-full bg-white flex flex-col gap-1 overflow-y-auto'>
+        <div className='h-32  rounded-md px-6 py-5'>
           <div className='flex gap-1 items-center'>
             <div>
               <img src={"/assets/images/orange-dot.png"} alt='orange-dot' />

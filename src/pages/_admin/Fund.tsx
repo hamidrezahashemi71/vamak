@@ -9,7 +9,7 @@ const FundPage = () => {
   useDocTitle("وامک ادمین | صندوق");
   return (
     <div className='flex flex-col gap-6'>
-      <div className='flex gap-6 justify-center'>
+      <div className='flex gap-6 justify-center md:flex-col'>
         <AdminBalanceComp adminBalance={adminBalance} />
         <DepositWithdrawComp />
       </div>

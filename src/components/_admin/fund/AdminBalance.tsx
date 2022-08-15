@@ -9,7 +9,7 @@ interface Props {
 const AdminBalanceComp: React.FC<Props> = ({adminBalance}) => {
   return (
     <>
-      <div className='w-[50%] h-[350px] bg-white rounded-md p-6'>
+      <div className='w-[50%] md:w-full h-[350px] bg-white rounded-md p-6'>
         <div className='flex flex-col'>
           <div className='flex gap-1 items-center'>
             <div>

@@ -1,13 +1,13 @@
 ===================== GENERAL COMPONENTS =====================
 
 GENERAL
-TODO: page titles
+TODO : page titles 
 TODO: making pages responsive
 TODO: farsi numbers
 TODO: logout functionality
 
 TABLES
-TODO: tables paddings and sizing
+TODO : tables paddings and sizing
 TODO: refactor table row background colors
 
 STATE MANAGEMENT

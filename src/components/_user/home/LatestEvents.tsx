@@ -4,7 +4,7 @@ import LatestEventsTable from "../../_tables/LatestEvents";
 const LatestEventsComp = () => {
   const [latestEvents, setLatestEvents] = useState([1]);
   return (
-    <div className='w w-[33%] h-[360px] bg-white rounded-md px-6 pt-5 pb-8  overflow-y-auto'>
+    <div className='w-[33%] lg:w-[66%] h-[360px] bg-white rounded-md px-6 pt-5 pb-8  overflow-y-auto'>
       <div className='flex flex-col'>
         <div className='flex gap-1 items-center'>
           <div>

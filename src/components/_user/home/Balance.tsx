@@ -2,7 +2,7 @@ import React from "react";
 
 const BalanceComp = () => {
   return (
-    <div className='w-[66%] h-[360px] bg-white rounded-md px-6 pt-5 pb-8'>
+    <div className='w-[66%] h-[360px] sm:h-full bg-white rounded-md px-6 pt-5 pb-8'>
       <div className='flex flex-col'>
         <div className='flex gap-1 items-center'>
           <div>

@@ -21,7 +21,7 @@ const LoginUserPage = () => {
         </button>
       </Link>
       <div className=' flex justify-center items-center bg-lightGray'>
-        <section className='w-2/6 h-2/6 '>
+        <section className='w-2/6 h-2/6 md:w-full '>
           <div className='h-screen flex flex-col items-center justify-center'>
             <div className='text-center text-2xl font-bold mb-4'>
               ورود کاربر

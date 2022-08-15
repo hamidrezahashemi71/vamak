@@ -24,7 +24,7 @@ const DepositWithdrawComp = () => {
 
   return (
     <>
-      <div className='w-[50%] h-[350px] bg-white rounded-md p-6 overflow-hidden'>
+      <div className='w-[50%] md:w-full md:ml-32 h-[350px] bg-white rounded-md p-6 overflow-hidden'>
         <div className='w-full h-full'>
           <div className='flex flex-col'>
             <div className='flex items-center'>

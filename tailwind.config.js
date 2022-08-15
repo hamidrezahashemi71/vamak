@@ -3,6 +3,12 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
+    screens: {
+      lg: {max: "1040px"},
+      md: {max: "800px"},
+      md2: {max: "700px"},
+      sm: {max: "600px"},
+    },
     colors: {
       black: "#202020",
       gray: "#BCBCBC",
